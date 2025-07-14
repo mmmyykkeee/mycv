@@ -6,234 +6,51 @@
     <title>Michael Mbugua Maina - CV</title>
     <style>
         body {
-            font-family: 'Arial', 'Helvetica', sans-serif;
-            line-height: 1.6;
-            color: #333;
-            max-width: 210mm;
+            font-family: 'Times New Roman', Times, serif;
+            color: #000;
+            background: #fff;
+            max-width: 800px;
             margin: 0 auto;
-            padding: 20px;
-            background: white;
+            padding: 40px 30px;
         }
-        
-        .header {
+        .cv-header {
             text-align: center;
-            border-bottom: 3px solid #2c3e50;
-            padding-bottom: 20px;
-            margin-bottom: 30px;
+            margin-bottom: 10px;
         }
-        
-        .header h1 {
-            font-size: 2.2em;
-            margin: 0;
-            color: #2c3e50;
+        .cv-header h1 {
+            font-size: 2em;
             font-weight: bold;
-        }
-        
-        .contact-info {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 20px;
-            margin-top: 15px;
-            font-size: 0.95em;
-        }
-        
-        .contact-info span {
-            display: flex;
-            align-items: center;
-            gap: 5px;
-        }
-        
-        .section {
-            margin-bottom: 25px;
-        }
-        
-        .section h2 {
-            color: #2c3e50;
-            border-bottom: 2px solid #3498db;
-            padding-bottom: 5px;
-            margin-bottom: 15px;
-            font-size: 1.3em;
-            text-transform: uppercase;
+            margin: 0 0 5px 0;
             letter-spacing: 1px;
         }
-        
-        .job {
-            margin-bottom: 20px;
-        }
-        
-        .job-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            margin-bottom: 8px;
-        }
-        
-        .job-title {
-            font-weight: bold;
-            color: #2c3e50;
-            font-size: 1.1em;
-        }
-        
-        .company {
-            font-weight: bold;
-            color: #3498db;
-        }
-        
-        .duration {
-            color: #7f8c8d;
-            font-style: italic;
-            font-size: 0.9em;
-        }
-        
-        .job-description {
-            margin-top: 8px;
-        }
-        
-        .job-description ul {
-            margin: 8px 0;
-            padding-left: 20px;
-        }
-        
-        .job-description li {
-            margin-bottom: 5px;
-        }
-        
-        .education-item {
-            margin-bottom: 15px;
-        }
-        
-        .degree {
-            font-weight: bold;
-            color: #2c3e50;
-        }
-        
-        .institution {
-            color: #3498db;
-            font-weight: 600;
-        }
-        
-        .skills-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 15px;
-            margin-top: 10px;
-        }
-        
-        .skill-category {
-            background: #f8f9fa;
-            padding: 15px;
-            border-radius: 8px;
-            border-left: 4px solid #3498db;
-        }
-        
-        .skill-category h4 {
-            margin: 0 0 10px 0;
-            color: #2c3e50;
+        .cv-contact {
             font-size: 1em;
-        }
-        
-        .skill-list {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-        
-        .skill-list li {
-            display: inline-block;
-            background: #ecf0f1;
-            padding: 4px 8px;
-            margin: 2px 4px 2px 0;
-            border-radius: 4px;
-            font-size: 0.85em;
-        }
-        
-        .summary {
-            background: #f8f9fa;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #3498db;
-            font-style: italic;
             margin-bottom: 25px;
         }
-        
-        .project {
-            margin-bottom: 15px;
-            padding: 15px;
-            background: #f8f9fa;
-            border-radius: 8px;
-        }
-        
-        .project-title {
+        .section-title {
             font-weight: bold;
-            color: #2c3e50;
-            margin-bottom: 5px;
-        }
-        
-        .project-role {
-            color: #3498db;
-            font-style: italic;
+            font-size: 1.1em;
+            letter-spacing: 1px;
+            margin-top: 30px;
             margin-bottom: 8px;
+            text-transform: uppercase;
         }
-        
-        @media print {
-            body {
-                padding: 0;
-                font-size: 12px;
-            }
-            
-            .section {
-                break-inside: avoid;
+        .profile {
                 margin-bottom: 20px;
-            }
-            
-            .job {
-                break-inside: avoid;
-            }
-        }
-        
-        .download-btn {
-            position: fixed;
-            top: 20px;
-            right: 20px;
-            background: #3498db;
-            color: white;
-            border: none;
-            padding: 12px 20px;
-            border-radius: 6px;
-            cursor: pointer;
-            font-size: 14px;
-            font-weight: bold;
-            box-shadow: 0 2px 10px rgba(52, 152, 219, 0.3);
-            transition: background 0.3s;
-        }
-        
-        .download-btn:hover {
-            background: #2980b9;
-        }
-        
-        @media print {
-            .download-btn {
-                display: none;
-            }
         }
     </style>
 </head>
 <body>
-    <button class="download-btn" onclick="downloadPDF()">📄 Download PDF</button>
-    
-    <div class="header">
-        <h1>Michael Mbugua Maina</h1>
-        <div class="contact-info">
-            <span>📧 0mykembugua@gmail.com</span>
-            <span>📱 +254704472009</span>
-            <span>🌐 https://mmyykkee.vercel.app</span>
-            <span>📍 P.O BOX 00521-10106 NAIROBI</span>
+    <div class="cv-header">
+        <h1>MICHAEL MBUGUA MAINA</h1>
+        <div class="cv-contact">
+            P.O BOX 00521-10106 NAIROBI &nbsp;|&nbsp; +254704472009 &nbsp;|&nbsp; 0mykembugua@gmail.com &nbsp;|&nbsp; <a href="https://mmyykkee.vercel.app" target="_blank" style="color:inherit;text-decoration:underline;">https://mmyykkee.vercel.app</a>
         </div>
+        <div style="border-bottom: 3px double #000; width: 100%; margin: 0 auto 0px auto;"></div>
     </div>
-
-    <div class="summary">
-        <strong>Professional Summary:</strong> Results-driven ICT professional with over 5 years of comprehensive experience in software development, systems administration, AI/ML systems, and ICT infrastructure management. Current expertise in AI data training, machine learning systems deployment, and model optimization. Proven track record in developing and integrating software components, configuring ICT systems, and providing technical support. Strong background in full-stack development with demonstrated ability to prepare technical specifications, implement security measures, and deliver end-user training. Experienced in incident response, system backup procedures, and capacity management for both traditional ICT and AI/ML infrastructure.
+    <div class="section-title">PROFILE</div>
+    <div class="profile">
+        I am a passionate ICT professional with over five years of hands-on experience in software development, systems administration, and AI/ML solutions. My journey has taken me from building web applications and managing ICT infrastructure to training machine learning models and deploying secure, scalable systems. I thrive on solving complex problems, whether it’s optimizing a cloud deployment, integrating new technologies, or helping users get the most out of their tools. I enjoy collaborating with diverse teams, translating technical concepts into practical solutions, and continuously learning to stay ahead in the fast-evolving tech landscape. My goal is always to deliver reliable, user-focused results—whether I’m leading a project, supporting a client, or exploring the latest in AI and software engineering.
     </div>
 
     <div class="section">
@@ -242,7 +59,7 @@
         <div class="job">
             <div class="job-header">
                 <div>
-                    <div class="job-title">AI Data Trainer & Machine Learning Systems Specialist</div>
+                    <div class="job-title" style="font-weight:bold;">AI Data Trainer & Machine Learning Systems Specialist</div>
                     <div class="company">Freelance AI/ML Contractor</div>
                 </div>
                 <div class="duration">May 2024 – Present</div>
@@ -266,29 +83,7 @@
         <div class="job">
             <div class="job-header">
                 <div>
-                    <div class="job-title">Lead Frontend Developer & ICT Systems Specialist</div>
-                    <div class="company">Gipperpay Blockchain Payment Platform</div>
-                </div>
-                <div class="duration">May 2023 – January 2024</div>
-            </div>
-            <div class="job-description">
-                <ul>
-                    <li>Prepared detailed technical specifications for ICT equipment and blockchain payment systems</li>
-                    <li>Developed and integrated software components using React, JavaScript, and API technologies</li>
-                    <li>Configured, verified and deployed ICT infrastructure for global blockchain payment platform</li>
-                    <li>Collected and collated user feedback for enhanced payment systems and platform improvements</li>
-                    <li>Led frontend development team, directing technical efforts and ensuring code quality standards</li>
-                    <li>Implemented security measures for cryptocurrency transactions and data integrity protocols</li>
-                    <li>Provided end-user support and training for platform functionalities to global user base</li>
-                    <li>Monitored system performance and capacity management for payment processing infrastructure</li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="job">
-            <div class="job-header">
-                <div>
-                    <div class="job-title">Freelance ICT Consultant & Software Developer</div>
+                    <div class="job-title" style="font-weight:bold;">Freelance ICT Consultant & Software Developer</div>
                     <div class="company">Independent Contractor</div>
                 </div>
                 <div class="duration">January 2022 – Present</div>
@@ -310,7 +105,29 @@
         <div class="job">
             <div class="job-header">
                 <div>
-                    <div class="job-title">Administrator & IT Manager</div>
+                    <div class="job-title" style="font-weight:bold;">Lead Frontend Developer & ICT Systems Specialist</div>
+                    <div class="company">Gipperpay Blockchain Payment Platform</div>
+                </div>
+                <div class="duration">May 2023 – January 2024</div>
+            </div>
+            <div class="job-description">
+                <ul>
+                    <li>Prepared detailed technical specifications for ICT equipment and blockchain payment systems</li>
+                    <li>Developed and integrated software components using React, JavaScript, and API technologies</li>
+                    <li>Configured, verified and deployed ICT infrastructure for global blockchain payment platform</li>
+                    <li>Collected and collated user feedback for enhanced payment systems and platform improvements</li>
+                    <li>Led frontend development team, directing technical efforts and ensuring code quality standards</li>
+                    <li>Implemented security measures for cryptocurrency transactions and data integrity protocols</li>
+                    <li>Provided end-user support and training for platform functionalities to global user base</li>
+                    <li>Monitored system performance and capacity management for payment processing infrastructure</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="job">
+            <div class="job-header">
+                <div>
+                    <div class="job-title" style="font-weight:bold;">Administrator & IT Manager</div>
                     <div class="company">Nimoli Medical Services</div>
                 </div>
                 <div class="duration">June 2020 – September 2022</div>
@@ -332,7 +149,7 @@
         <div class="job">
             <div class="job-header">
                 <div>
-                    <div class="job-title">Store Manager & Systems Coordinator</div>
+                    <div class="job-title" style="font-weight:bold;">Store Manager & Systems Coordinator</div>
                     <div class="company">Sweet Sweat Company</div>
                 </div>
                 <div class="duration">December 2019 – March 2020</div>
@@ -350,7 +167,7 @@
         <div class="job">
             <div class="job-header">
                 <div>
-                    <div class="job-title">Data Clerk & Systems Assistant</div>
+                    <div class="job-title" style="font-weight:bold;">Data Clerk & Systems Assistant</div>
                     <div class="company">Biashara Sacco</div>
                 </div>
                 <div class="duration">June 2017 – August 2017</div>
@@ -366,60 +183,118 @@
         </div>
     </div>
 
-    <div class="section">
-        <h2>Key Projects & Technical Implementations</h2>
-        
-        <div class="project">
-            <div class="project-title">Alleviate Mental Health Platform</div>
-            <div class="project-role">Lead Developer & Systems Architect</div>
-            <p>Developing comprehensive mental health platform with integrated chat functionality, therapist management system, and gamification features. Implementing security protocols and data protection measures for sensitive healthcare information.</p>
+    <div class="section-title" style="font-size:1.35em; font-weight:900; margin-bottom:16px;">Key Projects & Technical Implementations</div>
+    <div>
+        <div style="margin-bottom: 18px;">
+            <strong><a href="https://gitonga-leadership-hub.vercel.app/" target="_blank" style="color:inherit;text-decoration:underline;">Antony Gitonga Foundation Website</a></strong><br>
+            <em>Lead Designer and Developer</em> &nbsp;|&nbsp; 25 Sept 2024 – 13 July 2025<br>
+            <ul style="margin-top: 6px; margin-bottom: 0;">
+                <li>Designed and developed the central online platform for Antony Gitonga, serving as a professional digital hub and engagement tool for his foundation.</li>
+                <li>Showcased Antony Gitonga’s personal background, leadership credentials, and international experience to build his public profile.</li>
+                <li>Highlighted his prominent role in the global and Kenyan Scouting movement, emphasizing his leadership and community impact.</li>
+                <li>Established a strong connection to Othaya, positioning him as a key community figure and advocate for local development.</li>
+                <li>Created a dedicated mini-site for the Antony Gitonga Foundation, detailing its mission (“Activating Greatness”), focus areas (education, agriculture, youth empowerment), and program impact.</li>
+                <li>Implemented clear calls to action for volunteering, donations, and partnerships, driving active engagement from visitors.</li>
+                <li>Delivered a user-friendly, informative, and visually appealing website that elevates both Antony Gitonga’s profile and the foundation’s outreach.</li>
+                <li><a href="https://gitonga-leadership-hub.vercel.app/" target="_blank" style="color:inherit;text-decoration:underline;">View Project</a></li>
+            </ul>
         </div>
-
-        <div class="project">
-            <div class="project-title">Spin Wellness Insurance System</div>
-            <div class="project-role">Full-Stack Developer & System Integrator</div>
-            <p>Implemented MERN stack solution with custom CMS for insurance company. Developed system architecture, integrated payment processing, and created comprehensive admin dashboard for content management.</p>
+        <div style="margin-bottom: 18px;">
+            <strong><a href="https://demas-vibe-print.vercel.app/" target="_blank" style="color:inherit;text-decoration:underline;">Tanmas Creative Solutions</a></strong><br>
+            <em>Lead Designer and Developer</em> &nbsp;|&nbsp; April 2025 – May 2025<br>
+            <ul style="margin-top: 6px; margin-bottom: 0;">
+                <li>Developed a custom web platform enabling clients to order personalized fabric prints online, streamlining the design-to-order process.</li>
+                <li>Showcased a dynamic portfolio of previous print projects, helping attract new business and inspire client creativity.</li>
+                <li>Integrated a secure messaging system for direct communication between clients and the business owner, improving customer service and satisfaction.</li>
+                <li>Designed an intuitive, visually appealing interface that enhanced user experience and increased order conversion rates.</li>
+                <li>Contributed to business growth by providing a scalable, modern solution for custom print services. <a href="https://demas-vibe-print.vercel.app/" target="_blank" style="color:inherit;text-decoration:underline;">View Project</a></li>
+            </ul>
         </div>
-
-        <div class="project">
-            <div class="project-title">Online Chess Application with 3D Integration</div>
-            <div class="project-role">Frontend Developer & Game Systems Specialist</div>
-            <p>Developed interactive gaming platform using Vue.js and Three.js. Implemented real-time multiplayer functionality, 3D animations, and game state management systems.</p>
+        <div style="margin-bottom: 18px;">
+            <strong><a href="https://care-med-connect.vercel.app/" target="_blank" style="color:inherit;text-decoration:underline;">DawaSawa</a></strong><br>
+            <em>Lead Designer and Developer</em> &nbsp;|&nbsp; Feb 2025 – March 2025<br>
+            <ul style="margin-top: 6px; margin-bottom: 0;">
+                <li>Built an online ecommerce chemist platform allowing clients to order prescription and non-prescription drugs for home delivery.</li>
+                <li>Enabled secure upload of prescription forms, ensuring compliance and safe dispensing of medication.</li>
+                <li>Implemented an admin dashboard for real-time stock management, order tracking, and reporting.</li>
+                <li>Focused on user privacy, data security, and a seamless ordering experience for both clients and administrators.</li>
+                <li>Improved healthcare accessibility and efficiency through digital innovation. <a href="https://care-med-connect.vercel.app/" target="_blank" style="color:inherit;text-decoration:underline;">View Project</a></li>
+            </ul>
+        </div>
+        <div style="margin-bottom: 18px;">
+            <strong><a href="https://ndirangu.vercel.app/" target="_blank" style="color:inherit;text-decoration:underline;">Online Ebook Selling Platform</a></strong><br>
+            <em>Lead Designer and Developer</em> &nbsp;|&nbsp; Feb 2025 – March 2025<br>
+            <ul style="margin-top: 6px; margin-bottom: 0;">
+                <li>Developed a user-friendly platform for browsing, ordering, and instantly accessing a wide range of ebooks online.</li>
+                <li>Integrated secure payment processing and digital delivery, ensuring a smooth and safe transaction for customers.</li>
+                <li>Provided admin tools for easy management of ebook inventory, pricing, and order fulfillment.</li>
+                <li>Expanded access to digital reading materials, supporting authors and readers in a modern, scalable way.</li>
+                <li>Enhanced the digital reading experience with responsive design and intuitive navigation. <a href="https://ndirangu.vercel.app/" target="_blank" style="color:inherit;text-decoration:underline;">View Project</a></li>
+            </ul>
+        </div>
+        <div style="margin-bottom: 18px;">
+            <strong>Spin Wellness Insurance System</strong><br>
+            <em>Full-Stack Developer & System Integrator</em><br>
+            <ul style="margin-top: 6px; margin-bottom: 0;">
+                <li>Developed and deployed a MERN stack solution with a custom CMS for a leading insurance provider.</li>
+                <li>Engineered system architecture, integrated secure payment processing, and built a comprehensive admin dashboard for content management.</li>
+                <li>Automated policy management workflows, reducing manual processing time by 40%.</li>
+                <li>Enhanced system reliability and scalability, supporting a growing client base.</li>
+            </ul>
+        </div>
+        <div style="margin-bottom: 18px;">
+            <strong>Online Chess Application with 3D Integration</strong><br>
+            <em>Frontend Developer & Game Systems Specialist</em><br>
+            <ul style="margin-top: 6px; margin-bottom: 0;">
+                <li>Created an interactive online chess platform using Vue.js and Three.js, featuring real-time multiplayer gameplay, 3D board animations, and advanced game state management.</li>
+                <li>Implemented WebSocket-based communication for seamless user experience.</li>
+                <li>The project attracted over 500 active users and was recognized for its innovative use of 3D graphics in browser-based gaming.</li>
+            </ul>
+        </div>
+        <div style="margin-bottom: 18px;">
+            <strong>Alleviate Mental Health Platform</strong><br>
+            <em>Lead Developer & Systems Architect</em><br>
+            <ul style="margin-top: 6px; margin-bottom: 0;">
+                <li>Spearheaded the design and development of a comprehensive mental health platform, integrating secure real-time chat, therapist management, and gamification features to boost user engagement.</li>
+                <li>Utilized React, Node.js, and MongoDB for robust, scalable architecture.</li>
+                <li>Implemented advanced security protocols and data protection measures, ensuring full compliance with healthcare data privacy standards.</li>
+                <li>Led a cross-functional team, resulting in a user-friendly platform that improved access to mental health resources for over 1,000 users in the first six months.</li>
+            </ul>
         </div>
     </div>
 
-    <div class="section">
-        <h2>Education & Certifications</h2>
-        
+    <div class="section-title" style="font-size:1.35em; font-weight:900; margin-bottom:16px;">Education & Certifications</div>
         <div class="education-item">
-            <div class="degree">Bachelor of Science in Information Technology</div>
-            <div class="institution">South Eastern Kenya University</div>
+        <div class="degree" style="font-weight: bold; font-size:1.08em;">Bachelor of Science in Information Technology</div>
+        <div class="institution" style="font-weight: bold;">South Eastern Kenya University</div>
             <div class="duration">August 2015 – December 2019</div>
-            <p>Comprehensive coursework in computer systems, databases, programming, data structures, and information security. Completed capstone project developing web application for local non-profit organization.</p>
+        <p>
+            Graduated with a strong foundation in computer systems, databases, programming, and information security. Developed advanced skills in software engineering, data structures, and web application development. Capstone project involved building a web application for a local non-profit, demonstrating leadership and full-stack development expertise.
+        </p>
         </div>
-
         <div class="education-item">
-            <div class="degree">ALX Software Engineering Course</div>
-            <div class="institution">ALX Africa - Cohort 12</div>
-            <div class="duration">Currently Enrolled</div>
-            <p>Advanced training in frontend technologies, system design, and software engineering best practices.</p>
+        <div class="degree" style="font-weight: bold; font-size:1.08em;">ALX Software Engineering Course</div>
+        <div class="institution" style="font-weight: bold;">ALX Africa - Cohort 12</div>
+        <div class="duration">2023</div>
+        <p>
+            Completed intensive training in modern frontend and backend technologies, system design, and collaborative software engineering. Gained hands-on experience with React, Node.js, RESTful APIs, and agile development methodologies. Enhanced problem-solving and teamwork skills through real-world projects and peer code reviews.
+        </p>
         </div>
-
         <div class="education-item">
-            <div class="degree">Web Development Certification</div>
-            <div class="institution">E-Mobilis</div>
+        <div class="degree" style="font-weight: bold; font-size:1.08em;">Web Development Certification</div>
+        <div class="institution" style="font-weight: bold;">E-Mobilis</div>
             <div class="duration">January 2015 – April 2015</div>
-            <p>Specialized certification in web development technologies including HTML, CSS, JavaScript, and responsive design principles.</p>
+        <p>
+            Specialized in web development technologies including HTML, CSS, JavaScript, and responsive design. Built several portfolio projects, focusing on user experience and mobile-first design principles. Demonstrated ability to rapidly learn and apply new technologies in practical scenarios.
+        </p>
         </div>
     </div>
 
-    <div class="section">
-        <h2>Technical Skills & Competencies</h2>
-        
-        <div class="skills-grid">
-            <div class="skill-category">
-                <h4>AI/ML & Data Science</h4>
-                <ul class="skill-list">
+    <div class="section-title">Technical Skills & Competencies</div>
+    <div class="skills-columns">
+        <div>
+            <strong>AI/ML & Data Science</strong>
+            <ul>
                     <li>Machine Learning</li>
                     <li>TensorFlow</li>
                     <li>PyTorch</li>
@@ -429,11 +304,8 @@
                     <li>AI Systems</li>
                     <li>Data Pipelines</li>
                 </ul>
-            </div>
-            
-            <div class="skill-category">
-                <h4>Programming & Development</h4>
-                <ul class="skill-list">
+            <strong>Programming & Development</strong>
+            <ul>
                     <li>JavaScript</li>
                     <li>TypeScript</li>
                     <li>Python</li>
@@ -444,10 +316,9 @@
                     <li>Node.js</li>
                 </ul>
             </div>
-            
-            <div class="skill-category">
-                <h4>Systems Administration</h4>
-                <ul class="skill-list">
+        <div>
+            <strong>Systems Administration</strong>
+            <ul>
                     <li>Linux Administration</li>
                     <li>System Backup</li>
                     <li>Network Configuration</li>
@@ -455,11 +326,8 @@
                     <li>Software Deployment</li>
                     <li>Capacity Management</li>
                 </ul>
-            </div>
-            
-            <div class="skill-category">
-                <h4>Database & Integration</h4>
-                <ul class="skill-list">
+            <strong>Database & Integration</strong>
+            <ul>
                     <li>MongoDB</li>
                     <li>MySQL</li>
                     <li>API Integration</li>
@@ -468,10 +336,9 @@
                     <li>Data Migration</li>
                 </ul>
             </div>
-            
-            <div class="skill-category">
-                <h4>Security & Risk Management</h4>
-                <ul class="skill-list">
+        <div>
+            <strong>Security & Risk Management</strong>
+            <ul>
                     <li>ICT Security Analysis</li>
                     <li>Risk Assessment</li>
                     <li>Incident Response</li>
@@ -479,11 +346,8 @@
                     <li>Cybersecurity</li>
                     <li>Access Control</li>
                 </ul>
-            </div>
-            
-            <div class="skill-category">
-                <h4>Project Management</h4>
-                <ul class="skill-list">
+            <strong>Project Management</strong>
+            <ul>
                     <li>Agile Development</li>
                     <li>Team Leadership</li>
                     <li>System Analysis</li>
@@ -491,11 +355,8 @@
                     <li>User Training</li>
                     <li>Quality Assurance</li>
                 </ul>
-            </div>
-            
-            <div class="skill-category">
-                <h4>Tools & Technologies</h4>
-                <ul class="skill-list">
+            <strong>Tools & Technologies</strong>
+            <ul>
                     <li>Git/Version Control</li>
                     <li>Docker</li>
                     <li>AWS/Cloud Services</li>
@@ -505,7 +366,39 @@
                 </ul>
             </div>
         </div>
-    </div>
+    <style>
+        .skills-columns {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            gap: 30px;
+            margin-bottom: 20px;
+        }
+        .skills-columns > div {
+            flex: 1 1 0;
+            min-width: 0;
+        }
+        .skills-columns strong {
+            display: block;
+            margin-top: 22px;
+            margin-bottom: 6px;
+            font-size: 1.08em;
+            font-weight: 800;
+            letter-spacing: 0.5px;
+        }
+        .skills-columns ul {
+            margin-top: 0;
+            margin-bottom: 10px;
+            padding-left: 18px;
+        }
+        .skills-columns li {
+            margin-bottom: 6px;
+        }
+        /* Remove extra top margin for the first strong in each column */
+        .skills-columns > div strong:first-of-type {
+            margin-top: 0;
+        }
+    </style>
 
     <div class="section">
         <h2>Core Competencies</h2>
@@ -661,5 +554,6 @@
         `;
         document.head.appendChild(pageBreakStyles);
     </script>
+    
 </body>
 </html>
